@@ -1,0 +1,21 @@
+# Android
+/android/local.properties
+/android/bin/
+/android/gen/
+
+# JS
+/build/
+/dist/
+/node_modules/
+/app/bower_components/
+/.tmp/
+/.rebooted
+
+# Sphinx
+/docs/_build/
+
+# Run stuff
+/db/*
+!/db/migrations
+/config.json
+/coverage.html

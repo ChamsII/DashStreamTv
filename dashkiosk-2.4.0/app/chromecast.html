@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Dashkiosk — Chromecast</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <!-- build:css styles/chromecast-final.css -->
+  <link rel="stylesheet" href="styles/chromecast.css">
+  <!-- endbuild -->
+</head>
+<body>
+
+  <iframe class="dashboard" id="dashboard"
+          scrolling="no" frameborder="0"></iframe>
+
+  <div class="loading show" id="loading">
+    <div class="intro">
+      <h1>Please, wait.</h1>
+      <h2>This, Jen, is the Internet.</h2>
+    </div>
+    <%= include('spinner') %>
+    <div class="status" id="status">Connecting...</div>
+  </div>
+
+  <script src="//www.gstatic.com/cast/sdk/libs/receiver/2.0.0/cast_receiver.js"></script>
+  <!-- build:js scripts/chromecast-final.js -->
+  <script src="scripts/chromecast.js"></script>
+  <!-- endbuild -->
+</body>
+</html>
